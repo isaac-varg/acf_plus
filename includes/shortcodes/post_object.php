@@ -26,6 +26,11 @@ function iiv_acf_post_object_shortcode( $atts = [], $content = null, $tag = ''  
             case 'title':
                 $output .= esc_html( $posts->post_title);
                 break;
+            case 'link':
+                $title = get_the_title( $posts->ID );
+                $url = get_permalink( $posts->ID );
+                $output .= '<a href="' . $url . '">' . esc_html( $title ) . '</a>';
+                break;
             default:
                 // do nothing
                 break;

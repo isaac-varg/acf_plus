@@ -29,6 +29,7 @@ Parameters
     - Name of the ACF field
 - return 
     - title = title of the post object
+    - link = a link to page
 
 
 ### Relationship
