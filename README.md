@@ -69,7 +69,10 @@ Parameters
 
 Returns the name of the post object
 
-- This is only available for *text* control type
+- This is only available for *text* and *url* control type
 - Paremters
     - field
         - Name of the ACF Post Object field
+    - return type
+        - Title (String) = string of the post object title
+        - URL = url of the post page
