@@ -61,6 +61,30 @@ Parameters
     - 'inline' displays an horizontal inline list with each element separated by a comma
 
 
+### Post Object V2
+
+The iiv_acf_post_object_v2 shortcode allows you to display the value of a specified field for a post object linked to the current post.
+
+To use the shortcode, simply add the [iiv_acf_post_object_v2] code to any post or page where you want to display the value of the specified field. The shortcode accepts the following attributes:
+
+field (required)
+This attribute specifies the name of the ACF post object field that links to the post object you want to display. For example, if the post object field is called related_product, you would use field="related_product" in the shortcode.
+
+return (optional)
+This attribute specifies the name of the field you want to display the value of. The default value is title, which will display the title of the post object. You can specify any other field name to display the value of that field instead.
+
+Examples
+Here are some examples of how you might use the iiv_acf_post_object_two shortcode:
+
+```
+[iiv_acf_post_object_v2 field="related_product"]
+```
+This shortcode will display the title of the post object linked to the current post using the related_product ACF post object field.
+
+```
+[iiv_acf_post_object_v2 field="related_product" return="price"]
+```
+This shortcode will display the value of the price field for the post object linked to the current post using the related_product ACF post object field.
     
 
 ## Dynamic Tags
